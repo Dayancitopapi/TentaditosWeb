@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Arial';
-  src: url('./assets-fonts/arial.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  src: url('../assets-fonts/arial.woff2') format('woff2'); /* Solo si es estrictamente necesario */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lobster';
-  src: url('./assets/fonts/lobster.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  src: url('../assets/fonts/lobster.woff2') format('woff2'); /* Solo si es estrictamente necesario */
   font-weight: normal;
   font-style: normal;
 }
