@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('/assets/fonts/arial.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('/assets/fonts/lobster.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ThirstyRoug';
+  src: url('/assets/fonts/thirsty-roug.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+    --fucsia: #f8526a;
+    --rosa-pastel: #FFD1DC;
+    --oscuro: #333;
+    --gris-claro: #95a5a6;
+    --blanco: #ffffff;
+    --nieve: #f9f9f9;
+}
+
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+    color: var(--oscuro);
+    line-height: 1.6;
+}
+
+/* Navegación */
+header {
+    background: var(--blanco);
+    padding: 1rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'ThirstyRoug';
+    font-size: 1.8rem;
+    color: var(--fucsia);
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--gris-claro);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--oscuro);
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    height: 65vh;
+    background: url('/assets/img/logo.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+}
+
+/* Productos */
+.products {
+    padding: 50px 5%;
+    background: var(--nieve);
+}
+
+.products h2 {
+    text-align: center;
+    font-family: 'Lobster';
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: var(--fucsia);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--fucsia);
+    margin: 10px 0;
+}
+
+/* Items de Contacto */
+.card-content {
+    text-align: left;
+}
+
+#contacto {
+    color: var(--gris-claro);
+    margin-left: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.item:hover {
+    background: var(--nieve);
+}
+
+.details small {
+    display: block;
+    color: var(--gris-claro);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details a {
+    text-decoration: none;
+    color: var(--gris-claro);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.details a:hover {
+    color: var(--oscuro);
+}
+
+i {
+  font-size: 30px;    /* Tamaño del icono */
+  margin: 10px;      /* Espacio entre ellos */
+  transition: 0.3s;  /* Animación suave al pasar el ratón */
+}
+
+/* Colores específicos de marca */
+.fa-instagram { color: #E1306C; }
+.fa-whatsapp { font-size: 35px; color: #25D366; }
+.fa-envelope { color: #ea4335; }
+.fa-location-dot { color: #ea4335; }
+
+/* Efecto al pasar el ratón */
+i:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--fucsia);
+    color: var(--blanco);
+}

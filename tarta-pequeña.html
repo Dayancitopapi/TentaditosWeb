@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu Tarta | Candy Lab Oviedo</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body id="Tarta Pequeña">
+
+    <div class="main-wrapper">
+        <header>
+            <h1>Tarta Pequeña</h1>
+        </header>
+
+        <main class="customizer-container">
+            <section class="preview-column">
+                <div class="cake-display">
+                    <img src="/assets/img/11.jpeg" alt="Vista previa de la tarta" id="cake-image">
+                </div>
+            </section>
+            <section class="options-column">
+                <div>
+                    <label for="sabor">Sabor del biscocho</label>
+                    <select id="sabor">
+                        <option value="natural">Natural</option>
+                        <option value="chocolate">Chocolate</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color">Color de la cobertura</label>
+                    <select id="color">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="rosa">Rosa</option>
+                        <option value="morado">Morado</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="gris">Gris</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="nc">Número de contacto</label>
+                    <input id="nc" type="number" inputmode="numeric">
+                    <span id="error-number" class="error">Campo obligatorio</span>
+                </div>
+                <div>
+                    <label for="fecha">Fecha de recogida</label>
+                    <input id="fecha" type="date">
+                </div>
+                <button id="botonEnviar" class="btn-whatsapp" type="button">
+                    Pedir por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </section>
+        </main>
+    </div>
+    <script src="/js/scriptTP.js"></script>
+</body>
+</html>

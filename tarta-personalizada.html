@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu Tarta | Candy Lab Oviedo</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body id="Tarta Personalizada">
+
+    <div class="main-wrapper">
+        <header>
+            <h1>Personaliza tu Tarta </h1>
+        </header>
+
+        <main class="customizer-container">
+            <section class="preview-column">
+                <div class="cake-display">
+                    <img src="/assets/img/13.jpeg" alt="Vista previa de la tarta" id="cake-image">
+                </div>
+                <br>
+                <span id="precio" class="price">500$</span>
+            </section>
+            <section class="options-column">
+                <div>
+                    <label for="pisos">Pisos</label>
+                    <select id="pisos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="tamaño">Tamaño 1er piso(Diámetro)</label>
+                    <select id="tamaño">
+                        <option value="12">12cm</option>
+                        <option value="17">17cm</option>
+                        <option value="22">22cm</option>
+                    </select>
+                </div> 
+                <div id="t2" class="co">
+                    <br>
+                    <label for="tamaño2">Tamaño 2do piso(Diámetro)</label>
+                    <select id="tamaño2">
+                        <option value="12">12cm</option>
+                        <option value="17">17cm</option>
+                        <option value="22">22cm</option>
+                    </select>
+                </div>              
+                <div id="t3" class="co">
+                    <br>
+                    <label for="tamaño3">Tamaño 3er piso(Diámetro)</label>
+                    <select id="tamaño3">
+                        <option value="12">12cm</option>
+                        <option value="17">17cm</option>
+                        <option value="22">22cm</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="sabor">Sabor del biscocho</label>
+                    <select id="sabor">
+                        <option value="natural">Natural</option>
+                        <option value="chocolate">Chocolate</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="relleno">Sabor del relleno</label>
+                    <select id="relleno">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="fresa">Fresa</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="moca">Moka</option>
+                        <option value="piña">Piña</option>
+                        <option value="plátano">Plátano</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="tipo">Tipo de cobertura</label>
+                    <select id="tipo">
+                        <option value="nata">Nata</option>
+                        <option value="mousse">Mousse</option>
+                        <option value="chocolate">Chocolate</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color">Color de la cobertura</label>
+                    <select id="color">
+                        <option id="blanco" value="blanco">Blanco</option>
+                        <option id="chocolate" value="chocolate">Chocolate</option>
+                        <option id="rojo" value="rojo">Rojo</option>
+                        <option id="rosa" value="rosa">Rosa</option>
+                        <option id="morado" value="morado">Morado</option>
+                        <option id="azul" value="azul">Azul</option>
+                        <option id="verde" value="verde">Verde</option>
+                        <option id="amarillo" value="amarillo">Amarillo</option>
+                        <option id="naranja" value="naranja">Naranja</option>
+                        <option id="gris" value="gris">Gris</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje personalizado</label>
+                    <input id="mensaje" type="text" placeholder="(Opcional)" maxlength="50">
+                </div>
+                <br>
+                <div>
+                    <label for="nc">Número de contacto</label>
+                    <input id="nc" type="number" inputmode="numeric">
+                    <span id="error-number" class="error">Campo obligatorio</span>
+                </div>
+                <div>
+                    <label for="fecha">Fecha de entrega</label>
+                    <input id="fecha" type="date">
+                </div>
+                <button id="botonEnviar" class="btn-whatsapp" type="button">
+                    Pedir por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </section>
+        </main>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

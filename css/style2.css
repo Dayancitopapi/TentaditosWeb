@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('/assets-fonts/arial.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('/assets/fonts/lobster.woff2') format('woff2'); /* Solo si es estrictamente necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+    --fucsia: #f8526a;
+    --rosa-pastel: #FFD1DC;
+    --oscuro: #333;
+    --blanco: #ffffff;
+    --nieve: #f9f9f9;
+}
+
+body {
+    font-family: 'Arial';
+    background-color: var(--nieve);
+    margin: 0;
+    color: var(--oscuro);
+}
+
+.main-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--fucsia);
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-family: 'Lobster';
+}
+
+/* Contenedor Principal Flex */
+.customizer-container {
+    display: flex;
+    gap: 50px;
+    background: var(--blanco);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    align-items: flex-start;
+}
+
+/* Columna Izquierda */
+.preview-column {
+    flex: 1;
+    position: sticky;
+    top: 20px;
+}
+
+.cake-display {
+    position: relative;
+    background: var(--rosa-pastel);
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.cake-display img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Columna Derecha */
+.options-column {
+    flex: 1;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--rosa-pastel);
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.color-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.color-dot {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-dot:hover {
+    transform: scale(1.2);
+}
+
+.btn-whatsapp {
+    width: 100%;
+    background: var(--fucsia);
+    color: var(--blanco);
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: var(--fucsia);
+}
+
+.error {
+    color: rgba(0, 0, 0, 0);
+}
+
+.co {
+    display: none; 
+}
+
+.price {
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--fucsia);
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .customizer-container {
+        flex-direction: column;
+    }
+    .preview-column {
+        position: relative;
+    }
+}
