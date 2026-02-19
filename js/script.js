@@ -11,6 +11,10 @@ const telefono = "34655656365";
 const color = document.getElementById('color');
 const precio = document.getElementById('precio');
 
+document.addEventListener('DOMContentLoaded', () => {
+    contarPisos();
+});
+
 // 2. Escuchamos el evento 'change' (cambio de selección)
 pisos.addEventListener('change', function() {
     contarPisos();
