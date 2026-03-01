@@ -2,7 +2,7 @@
 document.getElementById('botonEnviar').addEventListener('click', function() {
     
     // 1. Configuramos tu número de WhatsApp (sin el +)
-    const telefono = "34655656365"; 
+    const telefono = "5356435508"; 
 
     // 2. Obtenemos lo que el usuario escribió en la única pregunta 
     const body = document.body.id;
@@ -64,4 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 6. Establecer 'mañana' como valor predeterminado
     inputFecha.value = mañana;
+
 });
