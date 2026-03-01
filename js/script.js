@@ -7,7 +7,7 @@ const tamaño = document.getElementById('tamaño')
 const tamaño2 = document.getElementById('tamaño2')
 const tamaño3 = document.getElementById('tamaño3')
 const errornumber = document.getElementById('error-number');
-const telefono = "34655656365"; 
+const telefono = "5356435508"; 
 const color = document.getElementById('color');
 const precio = document.getElementById('precio');
 
@@ -204,7 +204,7 @@ document.getElementById('botonEnviar').addEventListener('click', function() {
         "color de la cobertura: " + color + "\n" + 
         "Mensaje personalizado: " + mensaje + "\n" +
         "Número de contacto: " + nc + "\n" +
-        "Fecha de envío: " + fecha
+        "Fecha de recogida: " + fecha
     );
 
     // 5. Construimos la URL de la API de WhatsApp
@@ -212,4 +212,5 @@ document.getElementById('botonEnviar').addEventListener('click', function() {
 
     // 6. Abrimos la ventana de WhatsApp (App o Web)
     window.open(urlWhatsApp, '_blank');
+
 });
